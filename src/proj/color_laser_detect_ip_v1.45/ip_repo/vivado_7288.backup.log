@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sun Mar 27 09:04:12 2016
+# Process ID: 7288
+# Current directory: C:/xup_video_project/hdmi_vdma_13/proj/color_laser_detect_ip_v1.45/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4808 C:\xup_video_project\hdmi_vdma_13\proj\color_laser_detect_ip_v1.45\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: C:/xup_video_project/hdmi_vdma_13/proj/color_laser_detect_ip_v1.45/ip_repo/vivado.log
+# Journal file: C:/xup_video_project/hdmi_vdma_13/proj/color_laser_detect_ip_v1.45/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/xup_video_project/hdmi_vdma_13/proj/color_laser_detect_ip_v1.45/ip_repo/edit_color_mk2_v1_0.xpr
+INFO: [Project 1-313] Project file moved from 'C:/532/color_laser_detect_ip_v1.44/ip_repo' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPStaticSourceDir: Could not find the directory 'C:/xup_video_project/hdmi_vdma_13/proj/color_laser_detect_ip_v1.45/ip_repo/edit_color_mk2_v1_0.ip_user_files/ipstatic', nor could it be found using path 'C:/532/color_laser_detect_ip_v1.44/ip_repo/edit_color_mk2_v1_0.ip_user_files/ipstatic'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/hdmi_vdma_13/proj/color_laser_detect_ip_v1.45/ip_repo/color_mk2_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2015_3/Vivado/2015.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 810.555 ; gain = 124.809

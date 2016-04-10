@@ -1,0 +1,372 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Mar 23 21:17:18 2016
+# Process ID: 8824
+# Current directory: D:/532/color_laser_detect_ip_v1.43/ip_repo/edit_color_mk2_v1_0.runs/synth_1
+# Command line: vivado.exe -log color_mk2_v1_0.vds -mode batch -messageDb vivado.pb -notrace -source color_mk2_v1_0.tcl
+# Log file: D:/532/color_laser_detect_ip_v1.43/ip_repo/edit_color_mk2_v1_0.runs/synth_1/color_mk2_v1_0.vds
+# Journal file: D:/532/color_laser_detect_ip_v1.43/ip_repo/edit_color_mk2_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source color_mk2_v1_0.tcl -notrace
+Command: synth_design -top color_mk2_v1_0 -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -83 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+WARNING: [Synth 8-2507] parameter declaration becomes local in color_mk2_v1_0_M00_AXIS with formal parameter declaration list [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:72]
+WARNING: [Synth 8-2507] parameter declaration becomes local in color_mk2_v1_0_S00_AXIS with formal parameter declaration list [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:64]
+WARNING: [Synth 8-2507] parameter declaration becomes local in color_mk2_v1_0_S00_AXIS with formal parameter declaration list [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:196]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 308.293 ; gain = 136.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'color_mk2_v1_0' [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:4]
+	Parameter H_RESOLUTION bound to: 1920 - type: integer 
+	Parameter V_RESOLUTION bound to: 1080 - type: integer 
+	Parameter NUM_LINES bound to: 1 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 24 - type: integer 
+	Parameter NUM_OF_WORDS bound to: 1920 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1920 - type: integer 
+	Parameter bit_num_x bound to: 11 - type: integer 
+	Parameter bit_num_y bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'color_mk2_v1_0_S00_AXIS' [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:4]
+	Parameter H_RESOLUTION bound to: 1920 - type: integer 
+	Parameter V_RESOLUTION bound to: 1080 - type: integer 
+	Parameter NUM_OF_WORDS bound to: 1920 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1920 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter bit_num_x bound to: 11 - type: integer 
+	Parameter bit_num_y bound to: 11 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+	Parameter DETECTION bound to: 2'b00 
+	Parameter REPLACEMENT bound to: 2'b01 
+	Parameter STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:206]
+INFO: [Synth 8-256] done synthesizing module 'color_mk2_v1_0_S00_AXIS' (1#1) [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:4]
+WARNING: [Synth 8-689] width (12) of port connection 'x_center' does not match port width (11) of module 'color_mk2_v1_0_S00_AXIS' [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:88]
+WARNING: [Synth 8-689] width (12) of port connection 'y_center' does not match port width (11) of module 'color_mk2_v1_0_S00_AXIS' [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:89]
+INFO: [Synth 8-638] synthesizing module 'color_mk2_v1_0_M00_AXIS' [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:4]
+	Parameter H_RESOLUTION bound to: 1920 - type: integer 
+	Parameter V_RESOLUTION bound to: 1080 - type: integer 
+	Parameter NUM_OF_WORDS bound to: 1920 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1920 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_START_COUNT bound to: 24 - type: integer 
+	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
+	Parameter bit_num_x bound to: 11 - type: integer 
+	Parameter bit_num_y bound to: 11 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_COUNTER bound to: 2'b01 
+	Parameter SEND_STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:115]
+INFO: [Synth 8-256] done synthesizing module 'color_mk2_v1_0_M00_AXIS' (2#1) [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-256] done synthesizing module 'color_mk2_v1_0' (3#1) [D:/532/color_laser_detect_ip_v1.43/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:4]
+WARNING: [Synth 8-3917] design color_mk2_v1_0 has port laser_x[11] driven by constant 0
+WARNING: [Synth 8-3917] design color_mk2_v1_0 has port laser_y[11] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 328.098 ; gain = 155.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 328.098 ; gain = 155.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 328.098 ; gain = 155.813
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 332.938 ; gain = 160.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	               11 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              15K Bit         RAMs := 3     
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module color_mk2_v1_0_S00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 5     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              15K Bit         RAMs := 3     
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 3     
+Module color_mk2_v1_0_M00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 489.223 ; gain = 316.938
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design color_mk2_v1_0 has port laser_x[11] driven by constant 0
+WARNING: [Synth 8-3917] design color_mk2_v1_0 has port laser_y[11] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 490.551 ; gain = 318.266
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 490.551 ; gain = 318.266
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++---------------+----------------------------------------------------+-----------+----------------------+--------------------------------+-----------------------+
+|Module Name    | RTL Object                                         | Inference | Size (Depth x Width) | Primitives                     | Hierarchical Name     | 
++---------------+----------------------------------------------------+-----------+----------------------+--------------------------------+-----------------------+
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg           | Implied   | 2 K x 1              | RAM128X1S x 1  RAM256X1S x 7   | color_mk2_v1_0/ram__4 | 
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg | Implied   | 2 K x 8              | RAM64X1D x 60  RAM64M x 60     | color_mk2_v1_0/ram__5 | 
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo1_reg | Implied   | 2 K x 8              | RAM64X1D x 60  RAM64M x 60     | color_mk2_v1_0/ram__6 | 
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo2_reg | Implied   | 2 K x 8              | RAM64X1D x 60  RAM64M x 60     | color_mk2_v1_0/ram__7 | 
++---------------+----------------------------------------------------+-----------+----------------------+--------------------------------+-----------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[0] ' (FDSE) to '\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[2] '
+INFO: [Synth 8-3886] merging instance '\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[1] ' (FDSE) to '\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[2] ) is unused and will be removed from module color_mk2_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[1] ) is unused and will be removed from module color_mk2_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP_reg[0] ) is unused and will be removed from module color_mk2_v1_0.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 509.898 ; gain = 337.613
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 509.898 ; gain = 337.613
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 509.898 ; gain = 337.613
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 509.898 ; gain = 337.613
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 509.898 ; gain = 337.613
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |    45|
+|3     |LUT1      |    41|
+|4     |LUT2      |   134|
+|5     |LUT3      |    22|
+|6     |LUT4      |    78|
+|7     |LUT5      |    20|
+|8     |LUT6      |   291|
+|9     |MUXF7     |    72|
+|10    |RAM128X1S |     1|
+|11    |RAM256X1S |     7|
+|12    |RAM64M    |   180|
+|13    |RAM64X1D  |   180|
+|14    |FDRE      |   219|
+|15    |IBUF      |    47|
+|16    |OBUF      |    55|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------------+------+
+|      |Instance                       |Module                  |Cells |
++------+-------------------------------+------------------------+------+
+|1     |top                            |                        |  1394|
+|2     |  color_mk2_v1_0_M00_AXIS_inst |color_mk2_v1_0_M00_AXIS |   106|
+|3     |  color_mk2_v1_0_S00_AXIS_inst |color_mk2_v1_0_S00_AXIS |  1184|
++------+-------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 515.215 ; gain = 287.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 515.215 ; gain = 342.930
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 460 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'color_mk2_v1_0' is not ideal for floorplanning, since the cellview 'color_mk2_v1_0_S00_AXIS' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 368 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 1 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 7 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 180 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 180 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 579.313 ; gain = 367.023
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 579.313 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 23 21:18:05 2016...

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Mar 08 23:37:34 2016
+# Process ID: 27960
+# Current directory: D:/532/new_color/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24456 D:\532\new_color\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: D:/532/new_color/ip_repo/vivado.log
+# Journal file: D:/532/new_color/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/532/new_color/ip_repo/edit_color_mk2_v1_0.xpr
+ipx::open_ipxact_file D:/532/new_color/ip_repo/color_mk2_1.0/component.xml
+ipx::merge_project_changes files [ipx::current_core]

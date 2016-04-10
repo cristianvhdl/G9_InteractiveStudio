@@ -1,0 +1,98 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Mon Mar 07 19:09:35 2016
+| Host         : COOL running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file color_mk2_v1_0_control_sets_placed.rpt
+| Design       : color_mk2_v1_0
+| Device       : xc7a200t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    45 |
+| Minimum Number of register sites lost to control set restrictions |    29 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               3 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              81 |           42 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+--------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |                               Enable Signal                              |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++--------------------------+--------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  m00_axis_aclk_IBUF_BUFG |                                                                          | color_mk2_v1_0_M00_AXIS_inst/mst_exec_state[0]_i_1_n_0 |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG |                                                                          | color_mk2_v1_0_S00_AXIS_inst/write_state[1]_i_1_n_0    |                1 |              2 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_0_127_0_0_i_1_n_0               |                                                        |                1 |              2 |
+|  s00_axis_aclk_IBUF_BUFG |                                                                          |                                                        |                2 |              3 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_256_511_0_0_i_1_n_0             |                                                        |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_768_1023_0_0_i_1_n_0            |                                                        |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_512_767_0_0_i_1_n_0             |                                                        |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_1536_1791_0_0_i_1_n_0           |                                                        |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_1280_1535_0_0_i_1_n_0           |                                                        |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_1024_1279_0_0_i_1_n_0           |                                                        |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg_0_255_0_0_i_2_n_0               |                                                        |                1 |              4 |
+|  m00_axis_aclk_IBUF_BUFG |                                                                          |                                                        |                3 |              4 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/fifo_wren                                   | color_mk2_v1_0_S00_AXIS_inst/write_pointer[10]_i_1_n_0 |               11 |             21 |
+|  m00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_M00_AXIS_inst/tx_en                                       | color_mk2_v1_0_M00_AXIS_inst/mst_exec_state[0]_i_1_n_0 |               17 |             24 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_256_319_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_192_255_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1856_1919_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1792_1855_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1728_1791_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1664_1727_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1600_1663_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1536_1599_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_768_831_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1408_1471_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1344_1407_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_128_191_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1280_1343_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1216_1279_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1152_1215_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1088_1151_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1024_1087_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_0_63_0_2_i_1_n_0      |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_960_1023_0_2_i_1_n_0  |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_896_959_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_832_895_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_704_767_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_64_127_0_2_i_1_n_0    |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_640_703_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_576_639_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_1472_1535_0_2_i_1_n_0 |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_512_575_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_448_511_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_384_447_0_2_i_1_n_0   |                                                        |                9 |             36 |
+|  m00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_M00_AXIS_inst/tx_en                                       | color_mk2_v1_0_M00_AXIS_inst/read_pointer[10]_i_1_n_0  |               14 |             36 |
+|  s00_axis_aclk_IBUF_BUFG | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg_320_383_0_2_i_1_n_0   |                                                        |                9 |             36 |
++--------------------------+--------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

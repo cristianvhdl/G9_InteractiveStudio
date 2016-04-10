@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="color_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="color_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="10312500000fs"></ZoomStartTime>
+      <ZoomEndTime time="15312500001fs"></ZoomEndTime>
+      <Cursor1Time time="15000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="35" />
+   <wvobject db_ref_id="1" fp_name="/color_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/downstream_ready" type="logic">
+      <obj_property name="ElementShortName">downstream_ready</obj_property>
+      <obj_property name="ObjectShortName">downstream_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/upstream_valid" type="logic">
+      <obj_property name="ElementShortName">upstream_valid</obj_property>
+      <obj_property name="ObjectShortName">upstream_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/ip_ready" type="logic">
+      <obj_property name="ElementShortName">ip_ready</obj_property>
+      <obj_property name="ObjectShortName">ip_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0" type="array">
+      <obj_property name="ElementShortName">stream_data_fifo0[0:25][7:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_data_fifo0[0:25][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo1" type="array">
+      <obj_property name="ElementShortName">stream_data_fifo1[0:25][7:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_data_fifo1[0:25][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo2" type="array">
+      <obj_property name="ElementShortName">stream_data_fifo2[0:25][7:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_data_fifo2[0:25][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_difference" type="array">
+      <obj_property name="ElementShortName">color_difference[7:0]</obj_property>
+      <obj_property name="ObjectShortName">color_difference[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/color_difference" type="array">
+      <obj_property name="ElementShortName">color_difference[7:0]</obj_property>
+      <obj_property name="ObjectShortName">color_difference[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/mux_sel" type="array">
+      <obj_property name="ElementShortName">mux_sel[0:25]</obj_property>
+      <obj_property name="ObjectShortName">mux_sel[0:25]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/write_pointer" type="array">
+      <obj_property name="ElementShortName">write_pointer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_pointer[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_M00_AXIS_inst/read_pointer" type="array">
+      <obj_property name="ElementShortName">read_pointer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">read_pointer[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_M00_AXIS_inst/mst_exec_state" type="array">
+      <obj_property name="ElementShortName">mst_exec_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mst_exec_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_M00_AXIS_inst/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/ip_valid" type="logic">
+      <obj_property name="ElementShortName">ip_valid</obj_property>
+      <obj_property name="ObjectShortName">ip_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TUSER" type="array">
+      <obj_property name="ElementShortName">M_AXIS_TUSER[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TUSER[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_M00_AXIS_inst/M_AXIS_TKEEP" type="array">
+      <obj_property name="ElementShortName">M_AXIS_TKEEP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TKEEP[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/last" type="logic">
+      <obj_property name="ElementShortName">last</obj_property>
+      <obj_property name="ObjectShortName">last</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/x_loc" type="array">
+      <obj_property name="ElementShortName">x_loc[5:0]</obj_property>
+      <obj_property name="ObjectShortName">x_loc[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/y_loc" type="array">
+      <obj_property name="ElementShortName">y_loc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">y_loc[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_M00_AXIS_inst/y_loc_stream" type="array">
+      <obj_property name="ElementShortName">y_loc_stream[4:0]</obj_property>
+      <obj_property name="ObjectShortName">y_loc_stream[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/write_pointer" type="array">
+      <obj_property name="ElementShortName">write_pointer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_pointer[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/x1" type="array">
+      <obj_property name="ElementShortName">x1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/x2" type="array">
+      <obj_property name="ElementShortName">x2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/y1" type="array">
+      <obj_property name="ElementShortName">y1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/y2" type="array">
+      <obj_property name="ElementShortName">y2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">y2[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/x_center" type="array">
+      <obj_property name="ElementShortName">x_center[4:0]</obj_property>
+      <obj_property name="ObjectShortName">x_center[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/y_center" type="array">
+      <obj_property name="ElementShortName">y_center[3:0]</obj_property>
+      <obj_property name="ObjectShortName">y_center[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/pixel_current" type="array">
+      <obj_property name="ElementShortName">pixel_current[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_current[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/pixel_temp" type="array">
+      <obj_property name="ElementShortName">pixel_temp[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_temp[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/color_tb/color_mk2_v1_0_inst/color_mk2_v1_0_S00_AXIS_inst/fifo_wren" type="logic">
+      <obj_property name="ElementShortName">fifo_wren</obj_property>
+      <obj_property name="ObjectShortName">fifo_wren</obj_property>
+   </wvobject>
+</wave_config>

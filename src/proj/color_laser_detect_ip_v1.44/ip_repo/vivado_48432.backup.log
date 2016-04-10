@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Mar 09 21:24:53 2016
+# Process ID: 48432
+# Current directory: D:/532/new_color/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49004 D:\532\new_color\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: D:/532/new_color/ip_repo/vivado.log
+# Journal file: D:/532/new_color/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/532/new_color/ip_repo/edit_color_mk2_v1_0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/532/new_color/ip_repo/color_mk2_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2015.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 871.266 ; gain = 188.066
+ipx::open_ipxact_file D:/532/new_color/ip_repo/color_mk2_1.0/component.xml
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 09 21:25:55 2016...

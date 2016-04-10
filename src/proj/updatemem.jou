@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# 
+# Start of session at: Sun Apr 03 19:13:57 2016
+# Process ID: 6080
+# Current directory: C:/xup_video_project/latest/hdmi_vdma_2/proj
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/2015_3/SDK/2015.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk/hdmi_wrapper_hw_platform_1/hdmi_wrapper.mmi -data C:/Xilinx/2015_3/SDK/2015.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc hdmi_i/microblaze_0 -bit C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk/hdmi_wrapper_hw_platform_1/hdmi_wrapper.bit -out C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk/hdmi_wrapper_hw_platform_1/download.bit -force
+# Log file: C:/xup_video_project/latest/hdmi_vdma_2/proj/updatemem.log
+# Journal file: C:/xup_video_project/latest/hdmi_vdma_2/proj\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/2015_3/SDK/2015.3/scripts/updatemem/main.tcl -notrace

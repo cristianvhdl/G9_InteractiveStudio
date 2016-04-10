@@ -1,0 +1,343 @@
+
+*** Running vivado
+    with args -log color_mk2_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source color_mk2_v1_0.tcl
+
+
+****** Vivado v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source color_mk2_v1_0.tcl -notrace
+Command: synth_design -top color_mk2_v1_0 -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -67 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+WARNING: [Synth 8-2507] parameter declaration becomes local in color_mk2_v1_0_M00_AXIS with formal parameter declaration list [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:66]
+WARNING: [Synth 8-2507] parameter declaration becomes local in color_mk2_v1_0_S00_AXIS with formal parameter declaration list [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:56]
+WARNING: [Synth 8-2507] parameter declaration becomes local in color_mk2_v1_0_S00_AXIS with formal parameter declaration list [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:180]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 300.742 ; gain = 127.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'color_mk2_v1_0' [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:4]
+	Parameter H_RESOLUTION bound to: 1920 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1920 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 24 - type: integer 
+	Parameter bit_num bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'color_mk2_v1_0_S00_AXIS' [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:4]
+	Parameter NUMBER_OF_INPUT_WORDS bound to: 1920 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1920 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter bit_num bound to: 11 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+	Parameter DETECTION bound to: 2'b00 
+	Parameter REPLACEMENT bound to: 2'b01 
+	Parameter STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:190]
+INFO: [Synth 8-256] done synthesizing module 'color_mk2_v1_0_S00_AXIS' (1#1) [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-638] synthesizing module 'color_mk2_v1_0_M00_AXIS' [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:4]
+	Parameter NUMBER_OF_OUTPUT_WORDS bound to: 1920 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_START_COUNT bound to: 24 - type: integer 
+	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
+	Parameter bit_num bound to: 11 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_COUNTER bound to: 2'b01 
+	Parameter SEND_STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:109]
+INFO: [Synth 8-256] done synthesizing module 'color_mk2_v1_0_M00_AXIS' (2#1) [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0_M00_AXIS.v:4]
+WARNING: [Synth 8-350] instance 'color_mk2_v1_0_M00_AXIS_inst' of module 'color_mk2_v1_0_M00_AXIS' requires 10 connections, but only 9 given [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:86]
+INFO: [Synth 8-256] done synthesizing module 'color_mk2_v1_0' (3#1) [F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_mk2_1.0/hdl/color_mk2_v1_0.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 319.590 ; gain = 146.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 319.590 ; gain = 146.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 319.590 ; gain = 146.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 327.965 ; gain = 154.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              15K Bit         RAMs := 3     
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module color_mk2_v1_0_S00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              15K Bit         RAMs := 3     
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 3     
+Module color_mk2_v1_0_M00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 481.973 ; gain = 308.867
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design color_mk2_v1_0 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design color_mk2_v1_0 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design color_mk2_v1_0 has unconnected port s00_axis_tstrb[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 483.301 ; gain = 310.195
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 483.301 ; gain = 310.195
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++---------------+----------------------------------------------------+-----------+----------------------+--------------------------------+-----------------------+
+|Module Name    | RTL Object                                         | Inference | Size (Depth x Width) | Primitives                     | Hierarchical Name     | 
++---------------+----------------------------------------------------+-----------+----------------------+--------------------------------+-----------------------+
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/mux_sel_reg           | Implied   | 2 K x 1              | RAM128X1S x 1  RAM256X1S x 7   | color_mk2_v1_0/ram__4 | 
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo0_reg | Implied   | 2 K x 8              | RAM64X1D x 60  RAM64M x 60     | color_mk2_v1_0/ram__5 | 
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo1_reg | Implied   | 2 K x 8              | RAM64X1D x 60  RAM64M x 60     | color_mk2_v1_0/ram__6 | 
+|color_mk2_v1_0 | color_mk2_v1_0_S00_AXIS_inst/stream_data_fifo2_reg | Implied   | 2 K x 8              | RAM64X1D x 60  RAM64M x 60     | color_mk2_v1_0/ram__7 | 
++---------------+----------------------------------------------------+-----------+----------------------+--------------------------------+-----------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 502.730 ; gain = 329.625
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 502.730 ; gain = 329.625
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 502.730 ; gain = 329.625
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 502.730 ; gain = 329.625
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 502.730 ; gain = 329.625
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |LUT1      |     4|
+|3     |LUT2      |    40|
+|4     |LUT3      |    16|
+|5     |LUT4      |    21|
+|6     |LUT5      |    19|
+|7     |LUT6      |   270|
+|8     |MUXF7     |    72|
+|9     |RAM128X1S |     1|
+|10    |RAM256X1S |     7|
+|11    |RAM64M    |   180|
+|12    |RAM64X1D  |   180|
+|13    |FDRE      |    91|
+|14    |IBUF      |    31|
+|15    |OBUF      |    27|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------------+------+
+|      |Instance                       |Module                  |Cells |
++------+-------------------------------+------------------------+------+
+|1     |top                            |                        |   961|
+|2     |  color_mk2_v1_0_M00_AXIS_inst |color_mk2_v1_0_M00_AXIS |   115|
+|3     |  color_mk2_v1_0_S00_AXIS_inst |color_mk2_v1_0_S00_AXIS |   786|
++------+-------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 507.336 ; gain = 287.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 507.336 ; gain = 334.230
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 368 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 1 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 7 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 180 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 180 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 570.703 ; gain = 364.398
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 570.703 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 07 19:07:54 2016...

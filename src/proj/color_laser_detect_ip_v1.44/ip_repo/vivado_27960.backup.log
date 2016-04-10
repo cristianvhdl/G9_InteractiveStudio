@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Mar 08 23:37:34 2016
+# Process ID: 27960
+# Current directory: D:/532/new_color/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24456 D:\532\new_color\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: D:/532/new_color/ip_repo/vivado.log
+# Journal file: D:/532/new_color/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/532/new_color/ip_repo/edit_color_mk2_v1_0.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/532/new_color/ip_repo/color_mk2_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2015.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 837.207 ; gain = 149.832
+ipx::open_ipxact_file D:/532/new_color/ip_repo/color_mk2_1.0/component.xml
+WARNING: [IP_Flow 19-4308] Project file 'D:/532/new_color/ip_repo/color_tb_behav.wcfg' is not found in the component files. Please add the packaging file if necessary.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_testbench (Test Bench)': File 'F:/Dropbox/ece532_fpga Team Folder/new_color_ip/ip_repo/color_tb_behav.wcfg' is no longer found in the project sources. Please remove the packaging file if necessary.
+ipx::merge_project_changes files [ipx::current_core]
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 09 01:04:58 2016...

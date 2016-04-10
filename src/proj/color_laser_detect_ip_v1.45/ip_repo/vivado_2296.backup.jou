@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sun Mar 27 15:30:11 2016
+# Process ID: 2296
+# Current directory: C:/xup_video_project/hdmi_vdma/proj/color_laser_detect_ip_v1.45/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6148 C:\xup_video_project\hdmi_vdma\proj\color_laser_detect_ip_v1.45\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: C:/xup_video_project/hdmi_vdma/proj/color_laser_detect_ip_v1.45/ip_repo/vivado.log
+# Journal file: C:/xup_video_project/hdmi_vdma/proj/color_laser_detect_ip_v1.45/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/xup_video_project/hdmi_vdma/proj/color_laser_detect_ip_v1.45/ip_repo/edit_color_mk2_v1_0.xpr

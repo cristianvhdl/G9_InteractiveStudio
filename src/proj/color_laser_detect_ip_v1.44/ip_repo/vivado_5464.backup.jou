@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Mar 18 11:48:24 2016
+# Process ID: 5464
+# Current directory: C:/532/laser_detect_ip_v1.4/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2984 C:\532\laser_detect_ip_v1.4\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: C:/532/laser_detect_ip_v1.4/ip_repo/vivado.log
+# Journal file: C:/532/laser_detect_ip_v1.4/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/532/laser_detect_ip_v1.4/ip_repo/edit_color_mk2_v1_0.xpr
+launch_simulation
+open_wave_config C:/532/laser_detect_ip_v1.4/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/532/laser_detect_ip_v1.4/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+run 4 us
+run 4 us
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/532/laser_detect_ip_v1.4/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+run 4 us
+run 4 us
+close_sim
+ipx::open_ipxact_file C:/532/laser_detect_ip_v1.4/ip_repo/color_mk2_1.0/component.xml
+set_property version 1.41 [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property display_name color_mk2_v1.41 [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/532/laser_detect_ip_v1.4/ip_repo/color_mk2_1.0

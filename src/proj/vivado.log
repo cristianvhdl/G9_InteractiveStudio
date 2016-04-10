@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sun Apr 03 19:11:40 2016
+# Process ID: 7420
+# Current directory: C:/xup_video_project/latest/hdmi_vdma_2/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent456 C:\xup_video_project\latest\hdmi_vdma_2\proj\hdmi.xpr
+# Log file: C:/xup_video_project/latest/hdmi_vdma_2/proj/vivado.log
+# Journal file: C:/xup_video_project/latest/hdmi_vdma_2/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/xup_video_project/latest/vivado-boards-master/new/board_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/latest/hdmi_vdma_2/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/latest/hdmi_vdma_2/proj/color_laser_detect_ip_v1.44'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/hdmi_vdma_pjcts/hdmi_vdma_9/proj/laser_detect_ip_v1.41'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/hdmi_vdma_pjcts/hdmi_vdma_9/proj/AXI_Lite_IP_v1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/hdmi_vdma_pjcts/hdmi_vdma_8_with_ip/proj/laser_detect_ip_v1.4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/latest/hdmi_vdma_2/proj/new_color_ip/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/latest/hdmi_vdma_2/proj/AXI_Lite_IP_v1.1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup_video_project/hdmi_vdma_pjcts/hdmi_vdma_10_32frame_ipChanged7680/proj/laser_detect_ip_v1.42'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2015_3/Vivado/2015.3/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:33 . Memory (MB): peak = 1216.035 ; gain = 534.184
+launch_sdk -workspace C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk -hwspec C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk/hdmi_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk -hwspec C:/xup_video_project/latest/hdmi_vdma_2/proj/hdmi.sdk/hdmi_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 03 19:38:37 2016...

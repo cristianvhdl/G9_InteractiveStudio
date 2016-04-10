@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Mar 23 12:57:18 2016
+# Process ID: 12276
+# Current directory: C:/532/color_laser_detect_ip_v1.42/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8332 C:\532\color_laser_detect_ip_v1.42\ip_repo\edit_color_mk2_v1_0.xpr
+# Log file: C:/532/color_laser_detect_ip_v1.42/ip_repo/vivado.log
+# Journal file: C:/532/color_laser_detect_ip_v1.42/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/532/color_laser_detect_ip_v1.42/ip_repo/edit_color_mk2_v1_0.xpr
+ipx::open_ipxact_file C:/532/color_laser_detect_ip_v1.42/ip_repo/color_mk2_1.0/component.xml
+ipgui::add_param -name {V_RESOLUTION} -component [ipx::current_core] -display_name {V_RESOLUTION} -show_label {true} -show_range {true} -widget {}
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/532/color_laser_detect_ip_v1.42/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+run all
+restart
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/532/color_laser_detect_ip_v1.42/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+run 4 us
+close_sim
+launch_simulation
+open_wave_config C:/532/color_laser_detect_ip_v1.42/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+close_sim
+ipx::merge_project_changes ports [ipx::current_core]
+ipgui::add_param -name {H_RESOLUTION} -component [ipx::current_core] -display_name {H_RESOLUTION} -show_label {true} -show_range {true} -widget {}
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "V_RESOLUTION" -component [ipx::current_core] ]
+ipgui::add_param -name {NUM_LINES} -component [ipx::current_core] -display_name {Number of Lines} -show_label {true} -show_range {true} -widget {}
+set_property version 1.43 [ipx::current_core]
+set_property display_name color_mk2_v1.43 [ipx::current_core]
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/532/color_laser_detect_ip_v1.42/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/532/color_laser_detect_ip_v1.42/ip_repo/color_tb_behav.wcfg
+source color_tb.tcl
+run 1000 ns
+close_sim
