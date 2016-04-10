@@ -25,7 +25,7 @@ To use this project: <br />
 * Docs: contains final report, video demonstration of the project and slides for final presentations.
  * Group Report.
  * Slides.
- * Link to video demo in youtube.
+ * Link to video demo in Youtube: https://www.youtube.com/watch?v=KUTu_E1aZM0
 
 #Authors:
 Farshad Safavi <br />
